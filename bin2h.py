@@ -1,4 +1,4 @@
-import sys
+import sys, os.path
 
 if(len(sys.argv) > 1):
 	filename = sys.argv[1]
@@ -7,6 +7,9 @@ elif len(sys.argv) == 1:
 		filename = sys.argv[0]
 	else:
 		filename = raw_input("File name: ")
+
+filename = os.path.split(filename)[1]
+
 
 var_name = filename.replace(".", "_")
 
