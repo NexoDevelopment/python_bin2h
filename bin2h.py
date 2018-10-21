@@ -1,9 +1,12 @@
 import sys
 
-if(sys.argv[0]):
-	filename = sys.argv[0]
-else:
-	filename = raw_input("File name: ")
+if(len(sys.argv) > 1):
+	filename = sys.argv[1]
+elif len(sys.argv) == 1:
+	if "/" and "." in sys.argv[0]:
+		filename = sys.argv[0]
+	else:
+		filename = raw_input("File name: ")
 
 var_name = filename.replace(".", "_")
 
