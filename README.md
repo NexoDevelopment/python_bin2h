@@ -2,4 +2,4 @@
 Python - Binary to C header
 
 # Usage
-Drop a file on the python script **or** launch it and type filename or filepath !
+Drop a file on the python script
